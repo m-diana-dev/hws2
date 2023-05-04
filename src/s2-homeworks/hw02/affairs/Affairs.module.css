@@ -53,3 +53,17 @@
     flex-wrap: wrap;
     max-width: 450px;
 }
+
+.affairs.columns{
+    flex-direction: column;
+}
+
+@media (max-width: 480px) {
+    .buttonContainer {
+       flex-direction: column;
+        gap: 10px;
+    }
+    .button{
+        width: 100%;
+    }
+}
