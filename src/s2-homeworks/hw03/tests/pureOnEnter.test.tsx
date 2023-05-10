@@ -18,3 +18,4 @@ test('name 2', () => {
     pureOnEnter({key: ''} as any, addUser)
     expect(added).toBe(false)
 })
+

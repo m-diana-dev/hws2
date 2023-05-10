@@ -2,21 +2,52 @@
 }
 
 .inputAndButtonContainer {
+    display: flex;
+    gap: 12px;
+}
+.inputAndButtonContainer >div{
+    max-width: 372px;
+    width: 100%;
 }
 
 .error {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #CC0000;
+    margin-top: 7px;
 }
 
 .input {
+    width: 100%;
+    height: 36px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+
 }
 
 .input:focus {
 }
 
 .errorInput {
+    border-color: #CC0000;
 }
 
 .button {
+    max-width: 78px;
+    width: 100%;
+    height: 36px;
+    background: #0066CC;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
 }
 
 .button:focus {
@@ -26,10 +57,33 @@
 }
 
 .button:disabled {
+    pointer-events: none;
+    opacity: 0.5;
 }
 
 .text {
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 9px;
 }
 
 .greeting {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+    .inputAndButtonContainer {
+        flex-direction: column;
+    }
+    .inputAndButtonContainer >div{
+        max-width: 100%;
+    }
+    .button {
+        max-width: 100%;
+    }
 }
