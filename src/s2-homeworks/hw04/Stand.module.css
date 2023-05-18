@@ -2,12 +2,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 
 .inputs {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 31px;
+    max-width: 372px;
+    width: 100%;
 }
 
 .buttons {
@@ -20,4 +23,13 @@
     display: flex;
     flex-direction: column;
     gap: 36px;
+}
+
+@media (max-width: 776px) {
+    .stand {
+        flex-direction: column;
+    }
+    .inputs {
+        max-width: 100%;
+    }
 }
