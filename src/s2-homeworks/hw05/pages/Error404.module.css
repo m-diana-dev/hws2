@@ -9,3 +9,7 @@
     height: calc(100vh - var(--header_height));
     justify-content: center;
 }
+.wrapper img{
+    max-width: 451px;
+    width: 100%;
+}
