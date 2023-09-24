@@ -1,7 +1,11 @@
 .buttonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .clock {
+    font-size: 20px;
 }
 
 .watch {
@@ -11,4 +15,13 @@
 }
 
 .more {
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 16px;
+    padding: 8px 0 27px;
+}
+
+@media (max-width: 480px) {
+    .buttonsContainer {
+        flex-direction: column;
+    }
 }
