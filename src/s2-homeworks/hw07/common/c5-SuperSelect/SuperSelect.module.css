@@ -1,18 +1,21 @@
 .select {
     font-family: Montserrat;
     min-width: 180px;
-    height: 25px;
+    height: 35px;
     border-radius: 2px;
     border: 1px solid #000;
     font-size: 14px;
+    background-color: transparent;
+    color: var(--color);
+    border-color: var(--border-color);
 }
 
 .select:focus {
 }
 
 
-.option:hover {
-
+.option {
+    color: #000
 }
 
 @media (max-width: 480px) {

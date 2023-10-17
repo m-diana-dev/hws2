@@ -2,7 +2,7 @@
 }
 
 .item:not(:last-child) td{
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: 1px solid var(--decor-color);
 }
 
 .usersWrapp{
@@ -26,6 +26,7 @@
     font-size: 14px;
     font-weight: 600;
     background-color: #E5E5E5;
+    color: #000;
 }
 td{
     padding: 10px 15px;

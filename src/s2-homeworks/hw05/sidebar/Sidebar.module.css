@@ -40,6 +40,7 @@
     font-size: 22px;
     line-height: 27px;
     transition: all .3s;
+    color: #000;
 }
 .nav a:not(:last-child){
     margin-bottom: 45px;
