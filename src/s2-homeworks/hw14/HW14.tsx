@@ -9,6 +9,8 @@ import {useSearchParams} from 'react-router-dom'
 * 1 - дописать функцию onChangeTextCallback в SuperDebouncedInput
 * 2 - дописать функцию sendQuery в HW14
 * 3 - дописать функцию onChangeText в HW14
+*
+*
 * 4 - сделать стили в соответствии с дизайном
 * 5 - добавить HW14 в HW5/pages/JuniorPlus
 * */
@@ -31,25 +33,17 @@ const HW14 = () => {
     const [techs, setTechs] = useState<string[]>([])
 
     const sendQuery = (value: string) => {
-        setLoading(true)
+        setLoading(true);
         getTechs(value)
             .then((res) => {
-                // делает студент
-
-                // сохранить пришедшие данные
-
-                //
+                res && setTechs(res.data.techs);
+                setLoading(false);
             })
     }
 
     const onChangeText = (value: string) => {
         setFind(value)
-        // делает студент
-
-        // добавить/заменить значение в квери урла
-        // setSearchParams(
-
-        //
+        setSearchParams(value)
     }
 
     useEffect(() => {
@@ -65,7 +59,7 @@ const HW14 = () => {
     ))
 
     return (
-        <div id={'hw14'}>
+        <div id={'hw14'} className={s2.hwWrapp}>
             <div className={s2.hwTitle}>Homework #14</div>
 
             <div className={s2.hw}>
