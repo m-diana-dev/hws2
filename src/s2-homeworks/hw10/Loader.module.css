@@ -1,4 +1,8 @@
 .loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
     background-image: url('./Loading.png');
     background-size: cover;
     width: 90px;
